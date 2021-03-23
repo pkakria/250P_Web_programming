@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Class Registration
+        </title>
+        <style type= "text/css">
+        header, divider {display: block}
+        body{
+            color: black;
+            background-image: url(images/registration_page.jpg);
+            background-color: coral;
+        }
+        figure {
+            float: left;
+            width: 290px;
+            height: 220px;
+            padding: 5px;
+            margin: 20px;
+            border: 0px solid #000000;}
+        divider {
+            height: 10px;
+            background-color: darkgrey;
+        }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function get_action(form){
+                form.get_action = alert(`Here is a confirmation that you have registered for class on {$form.class_date}. A 
+                A confirmation email will be sent to {$form.email}. Thank you. You may now return to the home page.`);
+            }
+        </script>
+        <div>
+            <a>
+                <figure>
+                    <img src="/images/allu-parantha_290_220.jpg" alt="Stuffed Allu Parantha" />
+                    <figcaption>Stuffed Allu Parantha</figcaption>
+                </figure>
+                <h1>Register for Indian bread making course</h1>
+                <form action="/registration_confirmation" method="post">
+                    <label for="class_name">Select the class:</label>
+                    <select id="class_name" name="class_name">
+                        <option value="Parantha Making Class">Parantha Making Class</option>
+                    </select><br>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value="johndoe@xyz.com"><br>
+                    <label for="class_date">Please choose a class date:</label>
+                    <input type="date" id="class_date" name="class_date" list="thesedates">
+                    <datalist id="thesedates">
+                        <option label="Tuesday">2020-12-08</option>
+                        <option label="Wednesday">2020-12-09</option>
+                        <option label="Thursday">2020-12-10</option>
+                    </datalist>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form><br><br>
+            </a>
+            <divider>
+            </divider>
+            <a>
+                <figure>
+                    <img src="/images/bhelpuri_290_220.jpg" alt="Bhelpuri" />
+                    <figcaption>Bhelpuri</figcaption>
+                </figure>
+                <h1>Register for Indian snack making course</h1>
+                <form action="/registration_confirmation" method = "post">
+                    <label for="class_name">Select the class:</label>
+                    <select id="class_name" name="class_name">
+                        <option value="Snack Making Class">Snack Making Class</option>
+                    </select><br>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value="johndoe@xyz.com"><br>
+
+                    <label for="class_date">Please choose a class date:</label>
+                    <input type="date" id="class_date" name="class_date" list="thesedates">
+                    <datalist id="thesedates">
+                        <option label="Tuesday">2020-12-08</option>
+                        <option label="Wednesday">2020-12-09</option>
+                        <option label="Thursday">2020-12-10</option>
+                    </datalist>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </a>
+
+        </div>
+    </body>
+</html>

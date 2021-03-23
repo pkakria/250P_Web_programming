@@ -1,0 +1,10 @@
+{
+    "smtp":{
+        "host": "smtp.gmail.com", "port": 587,
+        "auth": {"user": "Apnawebmailserver1@gmail.com", "pass": "Jdge476&H#$%nb*(Imnq0"}
+    },
+    "imap": {
+        "host": "imap.gmail.com", "port": 993,
+        "auth": {"user": "Apnawebmailserver1@gmail.com", "pass": "Jdge476&H#$%nb*(Imnq0"}
+    }
+}
